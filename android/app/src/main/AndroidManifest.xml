@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kiwi_bloc_bible">
+    package="com.haha.kiwi_bloc_bible">
    <application
         android:label="kiwi_bloc_bible"
         android:name="${applicationName}"

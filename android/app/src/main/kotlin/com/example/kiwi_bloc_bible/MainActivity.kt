@@ -1,4 +1,4 @@
-package com.example.kiwi_bloc_bible
+package com.haha.kiwi_bloc_bible
 
 import io.flutter.embedding.android.FlutterActivity
 

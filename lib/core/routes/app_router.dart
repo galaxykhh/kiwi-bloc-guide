@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kiwi_bloc_bible/presentation/counter/screen/counter_screen.dart';
+import 'package:kiwi_bloc_bible/presentation/counter_cubit/screen/counter_cubit_screen.dart';
 import 'package:kiwi_bloc_bible/presentation/home/screen/home_sceen.dart';
 import 'package:kiwi_bloc_bible/presentation/infinite_scroll/screen/infinite_scroll_screen.dart';
 
@@ -11,6 +12,9 @@ class AppRouter {
 
       case CounterScreen.routeName:
         return CounterScreen.route();
+
+      case CounterCubitScreen.routeName:
+        return CounterCubitScreen.route();
 
       case InfiniteScrollScreen.routeName:
       default:

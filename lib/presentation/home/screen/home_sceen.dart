@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:kiwi_bloc_bible/core/utils/simple_router.dart';
 import 'package:kiwi_bloc_bible/presentation/counter/screen/counter_screen.dart';
+import 'package:kiwi_bloc_bible/presentation/counter_cubit/screen/counter_cubit_screen.dart';
 import 'package:kiwi_bloc_bible/presentation/home/widget/route_button.dart';
 import 'package:kiwi_bloc_bible/presentation/infinite_scroll/screen/infinite_scroll_screen.dart';
 
@@ -24,11 +26,15 @@ class HomeScreen extends StatelessWidget {
           children: [
             RouteButton(
               label: '카운터',
-              onPressed: () => Navigator.pushNamed(context, CounterScreen.routeName),
+              onPressed: () => context.pushNamed(CounterScreen.routeName),
+            ),
+            RouteButton(
+              label: '카운터 큐빗 버전',
+              onPressed: () => context.pushNamed(CounterCubitScreen.routeName),
             ),
             RouteButton(
               label: '무한스크롤',
-              onPressed: () => Navigator.pushNamed(context, InfiniteScrollScreen.routeName),
+              onPressed: () => context.pushNamed(InfiniteScrollScreen.routeName),
             ),
           ],
         ),
